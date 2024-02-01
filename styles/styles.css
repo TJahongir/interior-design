@@ -107,7 +107,6 @@ body {
 	font-family: "Open Sans", "Poppins", sans-serif;
 	background: #fff;
 	font-size: 0.9rem;
-	overflow-x: hidden;
 }
 ol,
 ul {
@@ -152,6 +151,52 @@ section {
 }
 
 /* Utilities */
+
+.box-shadow {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+	z-index: 10;
+}
+
+.dir {
+	display: flex;
+	flex-direction: row;
+	top: -3rem;
+	right: 0;
+}
+
+.absolute.dir .btn {
+	border-radius: 50%;
+	height: 1rem;
+	width: 1rem;
+	border: 0;
+	padding: 1rem;
+}
+
+.dir button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.dir button:hover {
+	background-color: var(--secondary);
+	color: #fff;
+}
+
+.dir button:first-child {
+	margin-right: 0.5rem;
+}
+
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -221,6 +266,10 @@ section {
 }
 .card:hover img {
 	color: #fff;
+}
+
+.card p {
+	transition: all ease-in 0.2s;
 }
 
 .card:hover p {
@@ -724,13 +773,17 @@ p {
 .footer-bottom .line {
 	width: 100%;
 	margin: 0;
+	margin-top: 1rem;
 }
 
 .footer-bottom p {
 	text-align: center;
-	margin: 1rem 0 0;
+	padding: 0.7rem 0;
 }
 
 .footer-bottom a {
 	color: var(--secondary);
+}
+
+@media screen and (max-width: 800px) {
 }

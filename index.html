@@ -72,8 +72,16 @@
 					<h5 class="pretext">WHAT WE DO</h5>
 					<h2>Our Service</h2>
 				</div>
-				<div class="card-wrapper">
-					<div class="card">
+				<div class="card-wrapper carousel relative">
+					<div class="dir absolute">
+						<button class="btn box-shadow" id="prev">
+							<i class="fa-solid fa-arrow-left"></i>
+						</button>
+						<button class="btn box-shadow" id="next">
+							<i class="fa-solid fa-arrow-right"></i>
+						</button>
+					</div>
+					<div class="card carousel-item">
 						<div class="icon">
 							<img src="./assets/interior-icon.png" alt="Interior Icon" />
 						</div>
@@ -85,7 +93,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card carousel-item">
 						<div class="icon">
 							<img src="./assets/planning-icon.png" alt="architecture-icon" />
 						</div>
@@ -182,7 +190,15 @@
 					<h5 class="pretext">TESTIMONIALS</h5>
 					<h2>What Clients Say About US:</h2>
 				</div>
-				<div class="card-wrapper">
+				<div class="card-wrapper relative">
+					<div class="dir absolute">
+						<button class="btn box-shadow" id="prev">
+							<i class="fa-solid fa-arrow-left"></i>
+						</button>
+						<button class="btn box-shadow" id="next">
+							<i class="fa-solid fa-arrow-right"></i>
+						</button>
+					</div>
 					<div class="card">
 						<div class="icon">
 							<img src="./assets/avatar-1.png" alt="Person 1" />
@@ -314,10 +330,18 @@
 					<div class="grid-column">
 						<h3>Follow US</h3>
 						<ul class="socials">
-							<li><a href="#">F</a></li>
-							<li><a href="#">T</a></li>
-							<li><a href="#">I</a></li>
-							<li><a href="#">L</a></li>
+							<li>
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -333,4 +357,8 @@
 		</footer>
 	</body>
 	<script src="/scripts/index.js"></script>
+	<script
+		src="https://kit.fontawesome.com/f62af251ce.js"
+		crossorigin="anonymous"
+	></script>
 </html>
