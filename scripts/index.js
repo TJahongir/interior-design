@@ -1,16 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
+	// Navlinks
+	const mobileMenu = document.querySelector(".mobile-menu");
+	const navLinks = document.querySelector(".main-menu");
+
+	mobileMenu.addEventListener("click", () => {
+		navLinks.classList.toggle("show");
+		mobileMenu.classList.toggle("open");
+	});
+
 	// For the first carousel
 	const carousel1 = document.querySelector(".carousel1");
 	const prevBtn1 = document.getElementById("prev1");
 	const nextBtn1 = document.getElementById("next1");
-	const cardWidth1 = document.querySelector(".carousel-item1").offsetWidth;
+	const cardWidth1 =
+		document.querySelector(".carousel-item1").offsetWidth * 1.5;
 	let currentIndex1 = 0;
 
 	// For the second carousel
-	const carousel2 = document.querySelector("#carousel2");
+	const carousel2 = document.querySelector(".carousel2");
 	const prevBtn2 = document.getElementById("prev2");
 	const nextBtn2 = document.getElementById("next2");
-	const cardWidth2 = document.querySelector(".carousel-item2").offsetWidth;
+	const cardWidth2 =
+		document.querySelector(".carousel-item2").offsetWidth * 1.5;
 	let currentIndex2 = 0;
 
 	function slideCarousel(carousel, prevBtn, nextBtn, cardWidth, direction) {
@@ -18,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		if (direction === "next") {
 			currentIndex++;
-			if (currentIndex >= carousel.children.length) {
+			if (currentIndex >= carousel.children.length - 1) {
 				currentIndex = 0;
 			}
 		} else {
@@ -29,8 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 
 		const translateXValue = -currentIndex * cardWidth;
-		carousel.style.transform = `translateX(${translateXValue}px)`;
-
 		carousel.style.transition = "transform 0.5s ease";
 		carousel.style.transform = `translateX(${translateXValue}px)`;
 

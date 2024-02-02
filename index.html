@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -25,21 +26,24 @@
 						<img src="./assets/logo.png" alt="logo" />
 					</a>
 				</div>
-				<div class="main-menu">
-					<ul>
-						<li><a href="#Home">Home</a></li>
-						<li><a href="#Project">Project</a></li>
-						<li><a href="#Services">Services</a></li>
-						<li><a href="#About">About</a></li>
-						<li><a href="#Blog">Blog</a></li>
-						<li><a href="#Shop">Shop</a></li>
-						<li><a href="#Contact">Contact</a></li>
-						<li><a href="#Sign-Up" class="btn btn-primary">Sign Up</a></li>
-					</ul>
+				<ul class="main-menu">
+					<li><a href="#Home">Home</a></li>
+					<li><a href="#Project">Project</a></li>
+					<li><a href="#Services">Services</a></li>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Blog">Blog</a></li>
+					<li><a href="#Shop">Shop</a></li>
+					<li><a href="#Contact">Contact</a></li>
+					<li><a href="#Sign-Up" class="btn btn-primary">Sign Up</a></li>
+				</ul>
+				<div class="mobile-menu">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
 			</div>
 		</nav>
-		<main class="hero">
+		<main class="hero" id="Home">
 			<div class="container">
 				<div class="hero-left">
 					<h5 class="pretext">MODERN INTERIOR</h5>
@@ -66,13 +70,11 @@
 				</div>
 			</div>
 		</main>
-		<section class="service">
+		<section class="service" id="Services">
 			<div class="container">
-				<div class="service-header">
+				<div class="service-header relative">
 					<h5 class="pretext">WHAT WE DO</h5>
 					<h2>Our Service</h2>
-				</div>
-				<div class="card-wrapper carousel1 relative">
 					<div class="dir absolute">
 						<button class="btn box-shadow" id="prev1">
 							<i class="fa-solid fa-arrow-left"></i>
@@ -80,6 +82,68 @@
 						<button class="btn box-shadow" id="next1">
 							<i class="fa-solid fa-arrow-right"></i>
 						</button>
+					</div>
+				</div>
+				<div class="card-wrapper carousel1">
+					<div class="card carousel-item1">
+						<div class="icon">
+							<img src="./assets/interior-icon.png" alt="Interior Icon" />
+						</div>
+						<div class="card-text">
+							<h3>Interior Design</h3>
+							<p>
+								Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
+								tempor incididunt ut labore.
+							</p>
+						</div>
+					</div>
+					<div class="card carousel-item1">
+						<div class="icon">
+							<img src="./assets/interior-icon.png" alt="Interior Icon" />
+						</div>
+						<div class="card-text">
+							<h3>Interior Design</h3>
+							<p>
+								Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
+								tempor incididunt ut labore.
+							</p>
+						</div>
+					</div>
+					<div class="card carousel-item1">
+						<div class="icon">
+							<img src="./assets/interior-icon.png" alt="Interior Icon" />
+						</div>
+						<div class="card-text">
+							<h3>Interior Design</h3>
+							<p>
+								Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
+								tempor incididunt ut labore.
+							</p>
+						</div>
+					</div>
+					<div class="card carousel-item1">
+						<div class="icon">
+							<img src="./assets/interior-icon.png" alt="Interior Icon" />
+						</div>
+						<div class="card-text">
+							<h3>Interior Design</h3>
+							<p>
+								Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
+								tempor incididunt ut labore.
+							</p>
+						</div>
+					</div>
+					<div class="card carousel-item1">
+						<div class="icon">
+							<img src="./assets/interior-icon.png" alt="Interior Icon" />
+						</div>
+						<div class="card-text">
+							<h3>Interior Design</h3>
+							<p>
+								Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
+								tempor incididunt ut labore.
+							</p>
+						</div>
 					</div>
 					<div class="card carousel-item1">
 						<div class="icon">
@@ -108,7 +172,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section class="about" id="About">
 			<div class="container">
 				<div class="about-left">
 					<div class="img-wrapper">
@@ -133,7 +197,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about-2">
+		<section class="about-2" id="Project">
 			<div class="container">
 				<div class="about-2-left">
 					<h5>24</h5>
@@ -186,19 +250,67 @@
 		</section>
 		<section class="testimonials">
 			<div class="container">
-				<div class="testimonials-header">
+				<div class="testimonials-header relative">
 					<h5 class="pretext">TESTIMONIALS</h5>
 					<h2>What Clients Say About US:</h2>
+					<div class="dir absolute">
+						<button class="btn box-shadow" id="prev2">
+							<i class="fa-solid fa-arrow-left"></i>
+						</button>
+						<button class="btn box-shadow" id="next2">
+							<i class="fa-solid fa-arrow-right"></i>
+						</button>
+					</div>
 				</div>
 				<div class="carousel-wrapper">
-					<div class="card-wrapper carousel2 relative">
-						<div class="dir absolute">
-							<button class="btn box-shadow" id="prev2">
-								<i class="fa-solid fa-arrow-left"></i>
-							</button>
-							<button class="btn box-shadow" id="next2">
-								<i class="fa-solid fa-arrow-right"></i>
-							</button>
+					<div class="card-wrapper carousel2">
+						<div class="card carousel-item2">
+							<div class="icon">
+								<img src="./assets/avatar-1.png" alt="Person 1" />
+							</div>
+							<div class="card-text">
+								<h3>Louis Saville<span>/CEO at Google</span></h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div class="card carousel-item2">
+							<div class="icon">
+								<img src="./assets/avatar-1.png" alt="Person 1" />
+							</div>
+							<div class="card-text">
+								<h3>Louis Saville<span>/CEO at Google</span></h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div class="card carousel-item2">
+							<div class="icon">
+								<img src="./assets/avatar-1.png" alt="Person 1" />
+							</div>
+							<div class="card-text">
+								<h3>Louis Saville<span>/CEO at Google</span></h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div class="card carousel-item2">
+							<div class="icon">
+								<img src="./assets/avatar-1.png" alt="Person 1" />
+							</div>
+							<div class="card-text">
+								<h3>Louis Saville<span>/CEO at Google</span></h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
 						</div>
 						<div class="card carousel-item2">
 							<div class="icon">
@@ -228,7 +340,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="news">
+		<section class="news" id="Blog">
 			<div class="container">
 				<div class="news-header">
 					<h5 class="pretext">LATEST NEWS</h5>
@@ -266,7 +378,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="sign-up">
+		<section class="sign-up" id="sign-up">
 			<div class="container">
 				<div class="sign-up-header">
 					<h2>DON'T FORGET TO SIGN UP</h2>
@@ -351,9 +463,9 @@
 			<div class="footer-bottom">
 				<div class="line"></div>
 				<p>
-					Copyright @ 2024. Made by
-					<a href="http://toshkhujaev.com" target="_blank">Jahongir</a>. Design
-					by Unknown.
+					Made by
+					<a href="http://toshkhujaev.com" target="_blank">Jahongir</a>.
+					Designed by Unknown.
 				</p>
 			</div>
 		</footer>
