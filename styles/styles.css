@@ -752,10 +752,6 @@ p {
 		font-size: 1.5rem;
 	}
 
-	.container {
-		width: 60 0px;
-	}
-
 	.navbar .main-menu {
 		display: none;
 		flex-direction: column;
@@ -804,7 +800,7 @@ p {
 		transform: rotate(45deg) translate(-5px, -6px);
 	}
 	body {
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 
 	.container {
@@ -833,6 +829,10 @@ p {
 
 	.service-header {
 		text-align: center;
+	}
+	.card-wrapper {
+		overflow-x: auto;
+		padding: 1rem;
 	}
 
 	.service .card .icon {
